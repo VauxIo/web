@@ -14,7 +14,7 @@
             <tbody>
                 {{#each}}
                 <tr>
-                    <td>{{name}}</td>
+                    <td>{{#link-to 'document' this}}{{name}}{{/link-to}}</td>
                     <td>{{size}}</td>
                     <td>{{uploaded}}</td>
                 </tr>

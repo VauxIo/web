@@ -5,3 +5,11 @@ App.DocumentsRoute = Ember.Route.extend({
         });
     }
 });
+
+App.DocumentRoute = Ember.Route.extend({
+    model: function(params) {
+        return Ember.$.getJSON('http://localhost:5000/documents/'+params.id+'/').then(function(data){
+            return data;
+        });
+    }
+})
