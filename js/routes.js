@@ -13,3 +13,7 @@ App.DocumentRoute = Ember.Route.extend({
         });
     }
 })
+
+App.UploadRoute = Ember.Route.extend({
+
+});

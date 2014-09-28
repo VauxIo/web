@@ -1,4 +1,4 @@
-['application', 'menu', 'documents', 'document'].forEach(function(template){
+['application', 'menu', 'documents', 'document', 'upload'].forEach(function(template){
     $.ajax({
         url: '/hbs/'+template+'.hbs',
         dataType: 'text',
@@ -21,4 +21,5 @@ var App = Ember.Application.create({
 App.Router.map(function () {
     this.resource('documents', { path: '/' });
     this.resource('document', { path: '/:id' });
+    this.resource('upload', { path: '/upload' });
 });
