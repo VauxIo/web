@@ -1,0 +1,17 @@
+{
+  "name": "docliber-web",
+  "version": "0.0.0",
+  "authors": [
+    "Mihir Singh <hello@mihirsingh.com>",
+    "Ross Delinger <rossdylan@csh.rit.edu>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
