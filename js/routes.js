@@ -9,7 +9,7 @@ App.DocumentsRoute = Ember.Route.extend({
 App.DocumentRoute = Ember.Route.extend({
     model: function(params) {
         return Ember.$.getJSON('http://localhost:5000/documents/'+params.id+'/').then(function(data){
-            data.path = 'http://localhost:5000/download/'+data.path;
+            data.path = 'http://localhost:5000/download/'+data.id;
             return data;
         });
     }
